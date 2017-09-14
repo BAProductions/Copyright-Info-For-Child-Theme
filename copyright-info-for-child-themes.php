@@ -1,6 +1,6 @@
 <?php 
 /*
-Plugin Name: Copyright Info For Child Themes
+Plugin Name: Copyright Info For Child Theme
 Plugin URI:  https://github.com/BAProductions
 Description: This plugin allow you add copyright info to your child theme insted of you using the parent theme copy info section. just go apprence and an click crfc Theme the add the code aboved add to your footer.php save it then add text box reloade your site and done.
 Version:     0.1
@@ -38,7 +38,7 @@ if ( !function_exists("add_action") ) {
 ?>
 <?php 
 //Make our public function to call the WordPress public function to add to the correct menu.
-class crifct
+class CopyrightInfoForChildTheme
 {
 	public function __construct() {
 			// don't call add_shortcode here

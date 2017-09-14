@@ -11,7 +11,7 @@ class CopyrightInfoForChildThemes_uninstaller
 			// (and all other filters) now...
 	}
 	public function CopyrightInfoForChildThemes_uninstall(){
-		$options = array( 'swap_player', 'show_artwork', 'play_button_color', 'auto_play', 'hide_related', 'show_comments', 'show_user', 'show_reposts' );
+		$options = array( 'copyright_year', 'copyright_text' );
 		foreach($options as $option_name){
 			unregister_setting('', $option_name, '');
 			delete_option($option_name);
