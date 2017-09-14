@@ -11,9 +11,9 @@
       <th class="label"><label for="copyright_code">Updated Copyright Footer Code:</label></th>
       <td align="left" scope="row"><textarea cols="100" rows="19" class="long" id="copyright_code" style="width:50%; overflow:hidden; resize:none; padding:2px 4px;" onfocus="this.select();" onmouseup="return false;">
 <?php echo htmlentities("<?php ") ?> &#13;
-    if (function_exists('pressttheme_crfct_copyrigh_info')) {
+    if (function_exists('pressttheme_crfct_copyright_info')) {
     	//Copyright date
-        echo pressttheme_crfct_copyrigh_info();
+        echo pressttheme_crfct_copyright_info();
     } else {
         //Copyright Symbol
         echo "&copy ";
@@ -32,8 +32,8 @@
 </textarea></td>
     </tr>
     <?php 
-        settings_fields( 'crifct_settings_group' ); // This will output the nonce, action, and option_page fields for a settings page.
-        do_settings_sections( 'customize_crifct' ); // This prints out the actual sections containing the settings fields for the page in parameter 
+        settings_fields( 'CopyrightInfoForChildTheme_settings_group' ); // This will output the nonce, action, and option_page fields for a settings page.
+        do_settings_sections( 'customize_CopyrightInfoForChildTheme' ); // This prints out the actual sections containing the settings fields for the page in parameter 
         ?>
     <?php submit_button("Update"); ?>
   </table>

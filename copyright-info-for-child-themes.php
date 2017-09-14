@@ -50,7 +50,7 @@ class CopyrightInfoForChildTheme
 		$this->CopyrightInfoForChildTheme_custom_settings();
 		flush_rewrite_rules();
 	}
-	public function CopyrightInfoForChildTheme_activate() {
+	public function CopyrightInfoForChildTheme_deactivate() {
 		// Activation code here
 		$this->crifc_theme_add_options();
 		$this->CopyrightInfoForChildTheme_custom_settings();
@@ -104,5 +104,5 @@ if (class_exists('CopyrightInfoForChildTheme')){
 	$CopyrightInfoForChildTheme->CopyrightInfoForChildTheme_init();
 }
 register_activation_hook( __FILE__, array($CopyrightInfoForChildTheme, 'CopyrightInfoForChildTheme_activate') );
-register_deactivation_hook( __FILE__, array($CopyrightInfoForChildTheme, 'CopyrightInfoForChildTheme_activate') );
+register_deactivation_hook( __FILE__, array($CopyrightInfoForChildTheme, 'CopyrightInfoForChildTheme_deactivate') );
 ?>
