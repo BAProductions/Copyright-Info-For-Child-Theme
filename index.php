@@ -1,0 +1,2 @@
+<?php
+// Sliecne id golden
